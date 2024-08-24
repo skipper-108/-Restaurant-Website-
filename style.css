@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+    position: static;
+    top:0;
+    margin-bottom:32px ;
+    background-color: white;
+    padding: 10px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.bar_icon{
+    margin-top: 0px;
+    font-size: 32px;
+}
+.hero_image{
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.hero{
+    display: flex;
+    gap : 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.tag{
+    background-color: orange;
+    padding: 5px 10px;
+    color: white;
+    align-self: center;
+    margin-left: 50px;
+   
+}
+.hero_content h1{
+    font-size: 72px;
+    line-height:1.2 ;
+    font-weight: 400;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.expolre_btn{
+    background: #ffc066;
+    align-self: flex-start;
+}
+
+    .hero{
+        flex-direction: row;
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+    }
+    .hero_image{
+        background-image: url(p.jpg);
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+       
+        border-radius: 50%;
+        position: relative;
+        top: 0;
+        right: 0;
+       
+    }
+    .hero_image img{
+        width: 80%;
+       
+    .hero_content{
+        gap:10px;
+        padding: 10px;
+    }
+    .hero_content h1{
+        font-size: 32px;
+    }
+    }
+
+.features{
+display: flex;
+margin-top: 100px;
+gap: 20px;
+justify-content: center;
+margin-bottom: 50px;
+}
+.feature{
+    display: flex;
+    gap:20px;
+    padding: 20px;
+}
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+}
+.divider{
+    border: 1px solid black;
+    margin: 20px 0px;
+    align-self: flex-start;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+.menu .tag{
+    align-self: center;
+}
+.grid{
+    display: grid;
+    gap:10px;
+    grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+
+}
+.item1 {
+     grid-area: I1;
+}
+.item2 {
+     grid-area: I2;
+     
+}
+.item3 {
+     grid-area: I3;
+}
+.item4 {
+     grid-area: I4;
+}
+.item5 {
+     grid-area: I5;
+}
+.item6 {
+     grid-area: I6;
+}
+.item7 {
+     grid-area: I7;
+     
+}
